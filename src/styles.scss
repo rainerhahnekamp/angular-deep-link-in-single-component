@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+@import '~@angular/material/theming';
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+h1 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 110%;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: underline;
+}

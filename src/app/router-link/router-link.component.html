@@ -1,0 +1,18 @@
+<h2 class="pb-5">Select your Destination</h2>
+
+<div class="flex items-center">
+  <div class="ml-2">
+    <ul>
+      <li *ngFor="let holiday of holidays$ | async">
+        <a [routerLink]="['..', holiday.id]"> {{ holiday.title }}</a>
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="holiday" class="items-center">
+    <h3>{{ holiday.title }}</h3>
+    <app-holiday-detail [holiday]="holiday"></app-holiday-detail>
+    <div class="text-center pt-5">
+      <a [routerLink]="['..', 0]" mat-raised-button>Close</a>
+    </div>
+  </div>
+</div>
