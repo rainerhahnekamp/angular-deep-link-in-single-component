@@ -19,6 +19,9 @@ export class ProgrammaticComponent implements OnInit {
 
   ngOnInit() {
     this.expandedId = +(this.route.snapshot.paramMap.get("id") ?? 0);
+    this.route.paramMap.subscribe((paramMap) => {
+      this.handleOpened(+(paramMap.get("id") ?? 0))
+    });
   }
 
 
