@@ -2,6 +2,8 @@
 
 This is a use-case study in Angular about deep-linking within a component.
 
+Video on YouTube: https://youtu.be/01NK1uHXXcE
+
 We have a route with dynamic properties. The assigned component needs to modify
 the route's dynamic property on certain user actions. No reactivation of the
 component should happen, e.g. ngOnInit is only run once.
